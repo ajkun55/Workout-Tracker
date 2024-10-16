@@ -35,7 +35,8 @@ date DATE NOT NULL DEFAULT CURRENT_DATE,
 time TIME NOT NULL DEFAULT CURRENT_TIME,
 weight FLOAT,
 reps INTEGER,
-sets INTEGER
+sets INTEGER,
+status VARCHAR(20) NOT NULL DEFAULT 'active' CHECK (status IN ('active', 'pending'))
 );
 ALTER TABLE workout_plan
 ADD CONSTRAINT unique_progress_entry UNIQUE (exercises, user_id, date, time);
