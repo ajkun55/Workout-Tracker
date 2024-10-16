@@ -92,6 +92,18 @@ Request body:{"exercises":["running","press","rope"],"date":"2024-10-09","time":
 
 Endpoint: http://localhost:3000/workoutPlan
 
+//you can set query 
+
+Endpoint: http://localhost:3000/workoutPlan?status=active
+
+Endpoint: http://localhost:3000/workoutPlan?status=pending
+
+Endpoint: http://localhost:3000/workoutPlan?sort=ASC
+
+Endpoint: http://localhost:3000/workoutPlan?sort=DESC
+
+Endpoint: http://localhost:3000/workoutPlan?status=active&sort=ASC
+
 Method: GET
 
 
